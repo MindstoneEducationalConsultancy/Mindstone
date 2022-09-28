@@ -1,0 +1,200 @@
+:root {
+  --baseColor: "#ffff";
+  --secondaryColor: "#A65EDE";
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 214px;
+  width: 100vw;
+}
+.logoPart {
+  display: flex;
+  border-bottom-right-radius: 45px;
+  background-color: #a65ede;
+  width: 200px;
+  height: 100%;
+}
+.logo {
+  margin: 30px;
+  align-self: flex-end;
+}
+.SubTitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: #a65ede;
+  position: absolute;
+  top: 230px;
+  left: 20px;
+}
+.contact {
+  display: flex;
+  background-color: #bd86e6;
+  width: 400px;
+  height: 40px;
+  margin-bottom: 20px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  align-items: center;
+  justify-content: end;
+  color: white;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  padding-right: 10px;
+}
+.headerPart2h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: #bd86e6;
+  margin: 10px 0;
+  transform: translateX(-15px);
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  margin-top: 30px;
+}
+.mainHeader {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 32px;
+  color: #a65ede;
+  margin: 10px 0;
+  transform: translateX(-15px);
+}
+.WhatsappButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  outline: none;
+  border-radius: 15px;
+  border: none;
+  width: 300px;
+  font-size: 1.5rem;
+  font-family: "Poppins";
+  font-style: normal;
+  color: white;
+  font-weight: bold;
+  margin-top: 35px;
+  background-image: linear-gradient(
+    96.66deg,
+    #a65ede 17.79%,
+    rgba(166, 94, 222, 0) 185.06%
+  );
+}
+.mainContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  background-color: #a65ede;
+  width: 80%;
+  height: 300px;
+  color: white;
+  flex-wrap: wrap;
+}
+.mainContentH1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  max-width: 300px;
+  margin: 0px 180px;
+  text-align: center;
+}
+.mainContentImage {
+  width: 480px;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 10px;
+  transform: translateY(-47px);
+}
+@media screen and (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .logoPart {
+    width: 100%;
+    justify-content: center;
+    border-bottom-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+  }
+  .logo {
+    align-self: center;
+  }
+  .SubTitle {
+    left: 30%;
+  }
+  .headerPart2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact {
+    padding: 10px;
+    width: 100%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .headerPart2h1 {
+    margin: 10px 0;
+  }
+  .main {
+    margin-top: 300px;
+    width: 100%;
+  }
+  .mainHeader {
+    margin: 0px 50px;
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  .WhatsappButton {
+    width: 60%;
+    margin-bottom: 10px;
+  }
+  .mainContent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainContentH1 {
+    margin: 0px 0px;
+    font-size: 1.5rem;
+  }
+  .mainContentImage {
+    width: 90%;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transform: translateY(0px);
+  }
+}
